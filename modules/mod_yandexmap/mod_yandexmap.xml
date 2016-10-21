@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5.0"
+	client="site"
+	method="upgrade">
+  <name>mod_yandexmap</name>
+  <creationDate>NOV 2014</creationDate>
+  <author>Axeld</author>
+  <copyright>GNU / GPL2 </copyright>
+  <authorEmail>spb-webmaster.ru@mail.ru</authorEmail>
+  <authorUrl>http://spb-webmaster.ru</authorUrl>
+  <version>2.3</version>
+  <description>
+    <![CDATA[<div style="font-size:11px;">
+      <i>Модуль Яндекс Карт
+      </i><hr>
+      <p>Модуль вывода Яндекс карт с вашими  метками. Помощь в создании скриптов на основе API Яндекс карт -> <a href="mailto:spb-webmaster@mail.ru">spb-webmaster@mail.ru</a></p></div>]]>
+  </description>
+  <files>
+    <filename module="mod_yandexmap">mod_yandexmap.php</filename>
+    <filename module="mod_yandexmap">index.html</filename>
+    <folder module="mod_yandexmap">libs</folder>
+    <folder module="mod_yandexmap">tmpl</folder>
+    <folder module="mod_yandexmap">images</folder>
+  </files>
+
+  <config>
+    <fields name="params" addfieldpath="modules/mod_yandexmap/libs/elements">
+      <fieldset name="navigator_form" title="NAVIGATOR_FORM_F">
+        <field  type="loftoolbar" name="loftoolbar">
+          <option>Версия API 2.1.2</option>
+        </field>
+      </fieldset>
+    
+
+	  
+      <fieldset name="Модуль создал Алексей Дементьев"  label="Установка меток на карту" >
+	  
+     <!--    <field type="text" name="procents" description="Введите проценты" label="Проценты от стоимости" default="15" />
+ <field type="spacer" default="OVERRIDING_LINK" />    
+        <field name="override_links" type="itaddrow" default="" label="Проверка" description="Проверка OVERRIDING_LINK_BOX_DESC" />
+-->
+       
+	    <field type="spacer" default="CUSTOM_SLIDER_CLASS_SETTING" />
+		
+		
+		
+		
+			    <field type="sfsimplecode" />
+		
+		
+				<field name="cache" type="radio" default="0" label="Кешировать" description="Кешировать ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="moduleclass_sfx" type="text" default="" label="Суффикс класса модуля" description="Суффикс класса модуля" />
+		<field name="centermap" size="70" type="text" default="55.75399400, 37.62209300" label="Центр карты" description="Определите цент карты - например Москва (55.75399400, 37.62209300)" />
+	<field name="scrope_bool" type="radio" default="1" label="Кнопка изменения масштаба" description="Кнопка изменения масштаба нужна ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	
+	
+		
+		<field name="scope" type="list" default="10" label="Масштаб карты" description="Укажите масштаб карты от 0 до 17">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="7">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+		</field>
+			<field name="typemap_bool" type="radio" default="1" label="Список типов карты" description="Список типов карты (Народная, спутник) ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	   <field name="bottom_bool" type="radio" default="1" label="Поиск по карте" description="Поиск по карте ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	   <field name="trafficControl" type="radio" default="1" label="Пробки" description="Показать пробки ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	
+	
+
+		<field name="iconmap" size="70" type="text" default="/modules/mod_yandexmap/images/myIcon.png" label="Ваша иконка на карте" description="Укажите  путь к иконки начинать с '/'" />
+		
+		
+		<field name="wi"  type="text" default="740" label="Ширина карты" description="Укажите  ширину карты на сайте" />
+		<field name="he"  type="text" default="450" label="Высота карты" description="Укажите  высоту карты на сайте" />
+		
+		
+		
+		
+		
+		
+        <field name="custom_slider_class" filter="raw"  type="itaddrow" default="" label="Добавить метки" description="Для устанговки метки в первое поле введите её координаты,а во второе описание" />
+      
+	  </fieldset>
+	  
+	  
+
+      <fieldset name="end_form" title="ENDFORM">
+        <field  type="lofspacer" name="end_form" title="end"/>
+      </fieldset>
+	  
+	  
+	  <fieldset name="template" label="Расширенные настройки" >
+
+                <field name="icon_wi" default="70" type="text" label="Размер иконки (ширина)" description="Можно выставить размер вашей картинки - ширина px" />
+				
+                <field name="icon_he" default="70" type="text" label="Размер иконки (высота)" description="Можно выставить размер вашей картинки - высота px" />
+	           
+			   <field name="zn1" default="-20"  type="text" label="Смещение левого верхнего угла иконки по горизонтали" description="Смещение левого верхнего угла иконки относительно её 'ножки' (точки привязки) по горизонтали (возможны отрицательные значения)" />  
+			   <field name="zn2" default="-70" type="text" label="Смещение левого верхнего угла иконки по вертикали" description="Смещение левого верхнего угла иконки относительно её 'ножки' (точки привязки)  по вертикали (возможны отрицательные значения)" />
+	   </fieldset>
+		<fieldset name="template" label="Шаблоны" >
+
+                <field name="template" type="modulelayout" label="Выбрать шаблон" description="Выбор" />
+	   </fieldset>
+	  
+    </fields>
+  </config>
+</extension>

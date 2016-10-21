@@ -1,0 +1,28 @@
+/**
+ * @version		4.1
+ * @package		AllVideos (plugin)
+ * @author    JoomlaWorks - http://www.joomlaworks.gr
+ * @copyright	Copyright (c) 2006 - 2011 JoomlaWorks Ltd. All rights reserved.
+ * @license		GNU/GPL license:http://www.gnu.org/copyleft/gpl.html
+ */
+
+/* General */
+.avPlayerWrapper div,
+.avPlayerWrapper object,
+.avPlayerWrapper embed { outline:0; }
+
+/* Layout */
+.avPlayerWrapper { display:block; text-align:center; clear:both; }
+.avPlayerWrapper .avPlayerContainer {
+	display:block;  margin:4px auto;
+
+	background-color:#303030;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#303030), to(#010101)); /* Saf4+, Chrome */
+	background-image:-webkit-linear-gradient(top, #303030, #010101); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:-moz-linear-gradient(top, #303030, #010101); /* FF3.6 */
+	background-image:-ms-linear-gradient(top, #303030, #010101); /* IE10 */
+	background-image:-o-linear-gradient(top, #303030, #010101); /* Opera 11.10+ */
+	background-image:linear-gradient(top, #303030, #010101);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#303030', EndColorStr='#010101'); /* IE6–IE9 */
+}
+.avPlayerWrapper .avPlayerContainer .avPlayerBlock { display:block; }

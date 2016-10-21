@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>plg_content_mavikthumbnails</name>
+    <author>Vitaliy Marenkov</author>
+    <creationDate>2011-11-10</creationDate>
+    <copyright>2009-2011 (c) Vitaliy Marenkov</copyright>
+    <authorEmail>admin@mavik.com.ua</authorEmail>
+    <authorUrl>www.mavik.com.ua</authorUrl>
+    <version>0.9.9.8</version>
+    <description>PLG_MAVIKTHUMBNAILS_DESCRIPTION</description>
+    <files>
+        <filename plugin="mavikthumbnails">mavikthumbnails.php</filename>
+		<folder>mavikthumbnails</folder>
+    </files>
+	<languages folder="languages">
+		<language tag="ru-RU">ru-RU.plg_content_mavikthumbnails.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="uk-UA">uk-UA.plg_content_mavikthumbnails.ini</language>
+		<language tag="uk-UA">uk-UA.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="sr-RS">sr-RS.plg_content_mavikthumbnails.ini</language>
+		<language tag="sr-RS">sr-RS.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="sr-YU">sr-YU.plg_content_mavikthumbnails.ini</language>
+		<language tag="sr-YU">sr-YU.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="bg-BG">bg-BG.plg_content_mavikthumbnails.ini</language>
+		<language tag="bg-BG">bg-BG.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="tr-TR">tr-TR.plg_content_mavikthumbnails.ini</language>
+		<language tag="tr-TR">tr-TR.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="ca-ES">ca-ES.plg_content_mavikthumbnails.ini</language>
+		<language tag="ca-ES">ca-ES.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="es-ES">es-ES.plg_content_mavikthumbnails.ini</language>
+		<language tag="es-ES">es-ES.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="de-DE">de-DE.plg_content_mavikthumbnails.ini</language>
+		<language tag="de-DE">de-DE.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="el-GR">el-GR.plg_content_mavikthumbnails.ini</language>
+		<language tag="el-GR">el-GR.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_mavikthumbnails.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="et-EE">et-EE.plg_content_mavikthumbnails.ini</language>
+		<language tag="et-EE">et-EE.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="pl-PL">pl-PL.plg_content_mavikthumbnails.ini</language>
+		<language tag="pl-PL">pl-PL.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_content_mavikthumbnails.ini</language>
+		<language tag="en-GB">en-GB.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="it-IT">it-IT.plg_content_mavikthumbnails.ini</language>
+		<language tag="it-IT">it-IT.plg_content_mavikthumbnails.sys.ini</language>
+		<language tag="cs-CZ">cs-CZ.plg_content_mavikthumbnails.ini</language>
+		<language tag="cs-CZ">cs-CZ.plg_content_mavikthumbnails.sys.ini</language>
+	</languages>
+	<params>
+		<param name="popuptype" type="list" default="slimbox" label="PLG_MAVIKTHUMBNAILS_POPUPTYPE" description="PLG_MAVIKTHUMBNAILS_POPUPTYPE_DESCRIPTION">
+			<option value="none">None</option>
+			<option value="slimbox">Slimbox</option>
+			<option value="highslide">Highslide (for non-commercial sites)</option>
+			<option value="modal">Joomla Modal</option>
+		</param>
+		<param name="blog_link" type="radio" default="0" label="PLG_MAVIKTHUMBNAILS_BLOGLINK" description="PLG_MAVIKTHUMBNAILS_BLOGLINK_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param type="spacer" default="PLG_MAVIKTHUMBNAILS_DO_FOR" />
+		<param name="thumbnails_for" type="list" default="0" label="PLG_MAVIKTHUMBNAILS_FOR" description="PLG_MAVIKTHUMBNAILS_FOR_DESCRIPTION">
+			<option value="0">PLG_MAVIKTHUMBNAILS_ALL_IMAGES</option>
+			<option value="1">PLG_MAVIKTHUMBNAILS_ONLY_CLASS</option>
+			<option value="2">PLG_MAVIKTHUMBNAILS_EXCEPT_CLASS</option>
+		</param>
+		<param name="class" type="text" default="" label="PLG_MAVIKTHUMBNAILS_CLASS" description="PLG_MAVIKTHUMBNAILS_CLASS_DESCRIPTION" />
+		<param type="spacer" default="PLG_MAVIKTHUMBNAILS_FULL_TEXT" />
+			<param name="proportions" type="list" default="keep" label="PLG_MAVIKTHUMBNAILS_PROPORTIONS" description="PLG_MAVIKTHUMBNAILS_PROPORTIONS_DESCRIPTION">
+			<option value="keep">PLG_MAVIKTHUMBNAILS_KEEP_PROPORTIONS</option>
+			<option value="crop">PLG_MAVIKTHUMBNAILS_CROP_TO_FIT</option>
+			<option value="area">PLG_MAVIKTHUMBNAILS_KEEP_AREA</option>
+			<option value="stretch">PLG_MAVIKTHUMBNAILS_STRETCH</option>
+		</param>
+		<param name="default_size" type="list" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE" description="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE_DESCRIPTION">
+			<option value="">PLG_MAVIKTHUMBNAILS_DONT_USE</option>
+			<option value="not_resized">PLG_MAVIKTHUMBNAILS_FOR_NOT_RESIZED</option>>
+			<option value="all">PLG_MAVIKTHUMBNAILS_FOR_ALL</option>>
+		</param>
+		<param name="width" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH" description="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH_DESCRIPTION" />
+		<param name="height" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT" description="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT_DESCRIPTION" />
+		<param type="spacer" default="PLG_MAVIKTHUMBNAILS_BLOGS" />
+		<param name="blog_proportions" type="list" default="keep" label="PLG_MAVIKTHUMBNAILS_PROPORTIONS" description="PLG_MAVIKTHUMBNAILS_PROPORTIONS_DESCRIPTION">
+			<option value="keep">PLG_MAVIKTHUMBNAILS_KEEP_PROPORTIONS</option>
+			<option value="crop">PLG_MAVIKTHUMBNAILS_CROP_TO_FIT</option>
+			<option value="area">PLG_MAVIKTHUMBNAILS_KEEP_AREA</option>
+			<option value="stretch">PLG_MAVIKTHUMBNAILS_STRETCH</option>
+		</param>
+		<param name="blog_default_size" type="list" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE" description="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE_DESCRIPTION">
+			<option value="">PLG_MAVIKTHUMBNAILS_DONT_USE</option>
+			<option value="not_resized">PLG_MAVIKTHUMBNAILS_FOR_NOT_RESIZED</option>>
+			<option value="all">PLG_MAVIKTHUMBNAILS_FOR_ALL</option>>
+		</param>
+		<param name="blog_width" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH" description="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH_DESCRIPTION" />
+		<param name="blog_height" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT" description="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT_DESCRIPTION" />
+		<param type="spacer" default="PLG_MAVIKTHUMBNAILS_CURSOR_AND_ICON" />
+		<param name="zoomin_img" type="radio" default="0" label="PLG_MAVIKTHUMBNAILS_ICON" description="PLG_MAVIKTHUMBNAILS_ICON_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="zoomin_cur" type="radio" default="0" label="PLG_MAVIKTHUMBNAILS_CURSOR" description="PLG_MAVIKTHUMBNAILS_CURSOR_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="spacer" default="PLG_MAVIKTHUMBNAILS_SYSTEMS" />
+		<param name="quality" type="text" default="80" label="PLG_MAVIKTHUMBNAILS_QUALITY" description="PLG_MAVIKTHUMBNAILS_QUALITY_DESCRIPTION" />
+		<param name="thumbputh" type="textarea" cols="30" rows="5" default="images/thumbnails" label="PLG_MAVIKTHUMBNAILS_DIRECTORY" description="PLG_MAVIKTHUMBNAILS_DIRECTORY_DESCRIPTION" />
+		<param name="thumbputh_subdir" type="radio" default="1" label="PLG_MAVIKTHUMBNAILS_SUBDIRECTORY" description="PLG_MAVIKTHUMBNAILS_SCRIPTS_SUBDIRECTORY_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="remoteputh" type="text" default="images/remote" label="PLG_MAVIKTHUMBNAILS_DIRECTORY_REMOTE" description="PLG_MAVIKTHUMBNAILS_DIRECTORY_REMOTE_DESCRIPTION" />
+		<param name="link_scripts" type="radio" default="1" label="PLG_MAVIKTHUMBNAILS_SCRIPTS" description="PLG_MAVIKTHUMBNAILS_SCRIPTS_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="popuptype" type="list" default="slimbox" label="PLG_MAVIKTHUMBNAILS_POPUPTYPE" description="PLG_MAVIKTHUMBNAILS_POPUPTYPE_DESCRIPTION">
+					<option value="none">None</option>
+					<option value="slimbox">Slimbox</option>
+					<option value="highslide">Highslide (for non-commercial sites)</option>
+					<option value="modal">Joomla Modal</option>
+				</field>
+				<field name="blog_link" type="radio" default="0" label="PLG_MAVIKTHUMBNAILS_BLOGLINK" description="PLG_MAVIKTHUMBNAILS_BLOGLINK_DESCRIPTION">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="thumbnails_for" type="list" default="0" label="PLG_MAVIKTHUMBNAILS_FOR" description="PLG_MAVIKTHUMBNAILS_FOR_DESCRIPTION">
+					<option value="0">PLG_MAVIKTHUMBNAILS_ALL_IMAGES</option>
+					<option value="1">PLG_MAVIKTHUMBNAILS_ONLY_CLASS</option>
+					<option value="2">PLG_MAVIKTHUMBNAILS_EXCEPT_CLASS</option>
+				</field>
+				<field name="class" type="text" default="" label="PLG_MAVIKTHUMBNAILS_CLASS" description="PLG_MAVIKTHUMBNAILS_CLASS_DESCRIPTION" />
+			</fieldset>
+			<fieldset name="full_text" label="PLG_MAVIKTHUMBNAILS_FULL_TEXT">
+				<field name="proportions" type="list" default="keep" label="PLG_MAVIKTHUMBNAILS_PROPORTIONS" description="PLG_MAVIKTHUMBNAILS_PROPORTIONS_DESCRIPTION">
+					<option value="keep">PLG_MAVIKTHUMBNAILS_KEEP_PROPORTIONS</option>
+					<option value="crop">PLG_MAVIKTHUMBNAILS_CROP_TO_FIT</option>
+					<option value="area">PLG_MAVIKTHUMBNAILS_KEEP_AREA</option>
+					<option value="stretch">PLG_MAVIKTHUMBNAILS_STRETCH</option>
+				</field>
+				<field name="default_size" type="list" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE" description="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE_DESCRIPTION">
+					<option value="">PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE_DESCRIPTION</option>
+					<option value="not_resized">PLG_MAVIKTHUMBNAILS_FOR_NOT_RESIZED</option>>
+					<option value="all">PLG_MAVIKTHUMBNAILS_FOR_ALL</option>>
+				</field>
+				<field name="width" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH" description="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH_DESCRIPTION" />
+				<field name="height" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT" description="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT_DESCRIPTION" />
+			</fieldset>
+			<fieldset name="blogs" label="PLG_MAVIKTHUMBNAILS_BLOGS">
+				<field name="blog_proportions" type="list" default="keep" label="PLG_MAVIKTHUMBNAILS_PROPORTIONS" description="PLG_MAVIKTHUMBNAILS_PROPORTIONS_DESCRIPTION">
+					<option value="keep">PLG_MAVIKTHUMBNAILS_KEEP_PROPORTIONS</option>
+					<option value="crop">PLG_MAVIKTHUMBNAILS_CROP_TO_FIT</option>
+					<option value="area">PLG_MAVIKTHUMBNAILS_KEEP_AREA</option>
+					<option value="stretch">PLG_MAVIKTHUMBNAILS_STRETCH</option>
+				</field>
+				<field name="blog_default_size" type="list" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE" description="PLG_MAVIKTHUMBNAILS_DEFAULT_SIZE_DESCRIPTION">
+					<option value="">PLG_MAVIKTHUMBNAILS_DONT_USE</option>
+					<option value="not_resized">PLG_MAVIKTHUMBNAILS_FOR_NOT_RESIZED</option>>
+					<option value="all">PLG_MAVIKTHUMBNAILS_FOR_ALL</option>>
+				</field>
+				<field name="blog_width" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH" description="PLG_MAVIKTHUMBNAILS_DEFAULT_WIDTH_DESCRIPTION" />
+				<field name="blog_height" type="text" default="" label="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT" description="PLG_MAVIKTHUMBNAILS_DEFAULT_HEIGHT_DESCRIPTION" />
+			</fieldset>
+			<fieldset name="cursor-and-icon" label="PLG_MAVIKTHUMBNAILS_CURSOR_AND_ICON" >
+				<field name="zoomin_img" type="radio" default="0" label="PLG_MAVIKTHUMBNAILS_ICON" description="PLG_MAVIKTHUMBNAILS_ICON_DESCRIPTION">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="zoomin_cur" type="radio" default="0" label="PLG_MAVIKTHUMBNAILS_CURSOR" description="PLG_MAVIKTHUMBNAILS_CURSOR_DESCRIPTION">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+			<fieldset name="systems_parameters" label="PLG_MAVIKTHUMBNAILS_SYSTEMS">
+				<field name="quality" type="text" default="80" label="PLG_MAVIKTHUMBNAILS_QUALITY" description="PLG_MAVIKTHUMBNAILS_QUALITY_DESCRIPTION" />
+				<field name="thumbputh" type="textarea" cols="30" rows="5" default="images/thumbnails" label="PLG_MAVIKTHUMBNAILS_DIRECTORY" description="PLG_MAVIKTHUMBNAILS_DIRECTORY_DESCRIPTION" />
+				<field name="thumbputh_subdir" type="radio" default="1" label="PLG_MAVIKTHUMBNAILS_SUBDIRECTORY" description="PLG_MAVIKTHUMBNAILS_SCRIPTS_SUBDIRECTORY_DESCRIPTION">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="remoteputh" type="text" default="images/remote" label="PLG_MAVIKTHUMBNAILS_DIRECTORY_REMOTE" description="PLG_MAVIKTHUMBNAILS_DIRECTORY_REMOTE_DESCRIPTION" />
+				<field name="link_scripts" type="radio" default="1" label="PLG_MAVIKTHUMBNAILS_SCRIPTS" description="PLG_MAVIKTHUMBNAILS_SCRIPTS_DESCRIPTION">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+<updateservers>
+        <server type="extension" name="mavikthumbnails">http://www.mavik.com.ua/download/mavikthumbnails-update.xml</server>
+</updateservers>
+
+</install>

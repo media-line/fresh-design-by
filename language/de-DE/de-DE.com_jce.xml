@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="2.0" type="language" core="1">
+	<name>Deutsch</name>
+	<tag>de-DE</tag>
+	<version>2.0.20</version>
+	<creationDate>21. Januar 2012</creationDate>
+	<author>Hartmut Steuerwald</author>
+	<authorEmail>info@h-steuerwald.de</authorEmail>
+	<authorUrl>www.hst-pc.de</authorUrl>
+	<copyright>Copyright (C) 2006 - 2011 Ryan Demmer. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>Deutsches Sprachpaket fuer den JCE 2.0.20 uebersetzt von H. Steuerwald</description>
+	<site folder="language/de-DE">
+		
+		<!-- // Optional plugin language files
+		<file>de-DE.com_jce_caption.ini</file> 
+		<file>de-DE.com_jce_emotions.ini</file>
+		<file>de-DE.com_jce_filemanager.ini</file>
+		<file>de-DE.com_jce_fullpage.ini</file>
+		<file>de-DE.com_jce_iframe.ini</file>
+		<file>de-DE.com_jce_mediamanager.ini</file>
+		<file>de-DE.com_jce_mediamanager.ini</file>
+		<file>de-DE.com_jce_templatemanager.ini</file>
+		// -->
+	</site>
+	<tinymce folder="components/com_jce/editor/tiny_mce">
+		<file>langs/de.js</file>
+		<file>langs/de_dlg.js</file>
+		<file>themes/advanced/langs/de.js</file>
+		<file>themes/advanced/langs/de_dlg.js</file>
+		<file>plugins/article/langs/de_dlg.js</file>
+		<file>plugins/browser/langs/de_dlg.js</file>
+		<file>plugins/imgmanager/langs/de_dlg.js</file>
+		<file>plugins/link/langs/de_dlg.js</file>
+		<file>plugins/searchreplace/langs/de_dlg.js</file>
+		<file>plugins/style/langs/de_dlg.js</file>
+		<file>plugins/table/langs/de_dlg.js</file>
+		<file>plugins/xhtmlxtras/langs/de_dlg.js</file>
+		<!-- // Optional plugin language files
+		<file>plugins/caption/langs/de.js</file>
+		<file>plugins/emotions/langs/de_dlg.js</file>
+		<file>plugins/filemanager/langs/de_dlg.js</file>
+		<file>plugins/fullpage/langs/de_dlg.js</file>
+		<file>plugins/iframe/langs/de.js</file>
+		<file>plugins/iframe/langs/de_dlg.js</file>
+		<file>plugins/mediamanager/langs/de_dlg.js</file>
+		<file>plugins/templatemanager/langs/de.js</file>
+		<file>plugins/templatemanager/langs/de_dlg.js</file>
+		// -->
+	</tinymce>
+	<administration folder="administrator/language/de-DE">
+		<file>de-DE.com_jce.ini</file>
+		<file>de-DE.com_jce.menu.ini</file>
+		<file>de-DE.com_jce.sys.ini</file>
+		<file>de-DE.plg_editors_jce.ini</file>
+		<file>de-DE.plg_editors_jce.sys.ini</file>
+				
+	</administration>
+</install>

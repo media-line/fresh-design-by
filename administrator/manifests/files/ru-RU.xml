@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="1.6" method="upgrade" client="site">
+    <name><![CDATA[akeebabackup-ru-RU]]></name>
+    <author><![CDATA[AkeebaBackup.com]]></author>
+    <authorurl>http://www.akeebabackup.com</authorurl>
+	<copyright>Copyright (C)2012 AkeebaBackup.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>0.0.20123001105606</version>
+    <creationDate>30 Jan 2012</creationDate>
+    <description><![CDATA[Russian (Russia) translation file for Akeeba Backup]]></description>
+	<fileset>
+		<files folder="backend" target="administrator/language/ru-RU">
+			<filename>ru-RU.com_akeeba.ini</filename>
+			<filename>ru-RU.com_akeeba.menu.ini</filename>
+			<filename>ru-RU.com_akeeba.sys.ini</filename>
+			<filename>ru-RU.mod_akadmin.ini</filename>
+			<filename>ru-RU.mod_akadmin.sys.ini</filename>
+			<filename>ru-RU.plg_system_aklazy.ini</filename>
+		</files>
+		<files folder="frontend" target="language/ru-RU">
+			<filename>ru-RU.com_akeeba.ini</filename>
+		</files>
+	</fileset>
+</extension>

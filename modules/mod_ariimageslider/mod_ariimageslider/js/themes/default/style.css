@@ -1,0 +1,112 @@
+#middle{padding-top:0px !important;}
+.ari-image-slider-wrapper
+{
+	margin: 0 auto;
+	padding-bottom:60px;
+}
+
+body .ari-image-slider-wCtrlNav 
+{
+	margin-bottom: 30px;
+}
+
+.nivoSlider {
+	position:relative;
+	margin: 0;
+	background:url(images/loading.gif) no-repeat 50% 50%;
+	
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.nivoSlider a {
+	border:0;
+}
+
+.nivo-controlNavHolder {
+	position:absolute;
+	left:0;
+	width:100%;
+	bottom:-105px;
+}
+
+.nivo-controlNav {
+	position: relative;
+	/*width: 760px !important;*/
+	padding:53px 0 0 165px;
+}
+
+.nivo-controlNav a {
+	display:block;
+	border:0;
+	margin-right:25px;
+	float:left;
+	font:normal 14px "Arial Narrow", Arial; font-stretch:condensed; text-transform:uppercase;
+	padding:0;
+	color:#494949; text-decoration:none;
+	width:auto;
+	min-width:70px;
+	word-wrap:normal;
+	white-space: nowrap;
+}
+.nivo-controlNav a:hover, .nivo-controlNav a.active {
+	color:#CCE2AE;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:32px;
+	height:34px;
+	background:url(images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-32px 0;
+	right:10px;
+}
+a.nivo-prevNav {
+	left:10px;
+}
+.nivo-controlNav a.hover {
+	color:#CCE2AE;
+}
+.nivo-controlNav .nivo-thumbNavWrapper img {
+	display: block !important;
+	position: absolute;
+	top: -100%;
+	left: -50%;
+	margin-top: -12px;
+	border: 1px solid #A0A0A0;
+	background-color: #FFF;
+	padding: 3px;
+	-moz-box-shadow: 0 0 5px #999;
+	-webkit-box-shadow: 0 0 5px #999;
+	-o-box-shadow: 0 0 5px #999;
+	box-shadow: 0 0 5px #999;
+}
+.nivo-arrow-border {
+  border-color: #0E0E0E transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:100%;
+  margin-bottom: -5px;
+  left:0;
+}
+.nivo-arrow {
+  border-color: #FFF transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:100%;
+  margin-bottom: -5px;
+  left:0;
+}

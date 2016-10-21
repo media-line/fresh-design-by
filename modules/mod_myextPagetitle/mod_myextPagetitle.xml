@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>mod_myextPagetitle</name>
+	<creationDate>2012.08.07</creationDate>
+    <author>Usov Dima</author>
+    <authorUrl>http://myext.ru</authorUrl>
+    <authorEmail>usovdm@gmail.com</authorEmail>
+    <copyright>Copyright (C) 2012 usovdm</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3</license>
+    <version>1.1.1</version>
+	<description>mod_myextPagetitle</description>
+	<files>
+		<filename module="mod_myextPagetitle">mod_myextPagetitle.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_myextPagetitle.xml</filename>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="mod_myextPagetitle">http://myext.ru/updates/mod_myextPagetitle.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<extension version="2.5"  type="template" client="site">
+	<name>original</name>
+	<creationDate>20.02.13</creationDate>
+	<author>Dmitriy K</author>
+	<authorEmail>webmast.dk@gmail.com</authorEmail>
+	<authorUrl>http://www.medialine.by</authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>Original template for Fresh Design</description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+	</files>
+	<positions>
+		<position>logo</position>
+		<position>search</position>
+		<position>main-menu</position>	
+		<position>icons</position>		
+		<position>breadcrumbs</position>				
+		<position>content-top</position>	
+		<position>content-bottom</position>
+		<position>left</position>
+		<position>right</position>
+		<position>footer-menu</position>		
+		<position>footer-left</position>
+		<position>footer-right</position>
+		<position>footer-center</position>
+	</positions>
+</extension>
+

@@ -1,0 +1,7 @@
+#sbox-window{ display:none;}
+.header .main-menu a{  padding:0px; margin:3px 4px 4px; }
+.header .main-menu a:hover,.header .main-menu .active a{padding:3px 8px 4px; margin:0;}
+.title{display:inline;}
+.ml{width:150px;}
+#header{position:relative; z-index:5;}
+.content .soc-share .head,.content .soc-share .body{display: inline;}

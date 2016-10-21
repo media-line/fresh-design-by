@@ -1,0 +1,17 @@
+body {
+	background:url(../images/body-top-main.png) 50% 0 no-repeat #fff;
+}
+#wrapper {
+	background:url(../images/body-left-main.png) 0 0 repeat-y;
+}
+#wrapper-inner {
+	background:url(../images/body-right-main.png) 100% 0 repeat-y;
+}
+#content {
+	padding: 0 0 15px 0px;
+}
+p.title{margin-left:32px;}
+#middle{padding-top:70px;}
+
+
+

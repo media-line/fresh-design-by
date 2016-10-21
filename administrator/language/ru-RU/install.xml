@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" client="administrator" type="language" method="upgrade">
+	<name>Russian</name>
+	<tag>ru-RU</tag>
+	<version>3.0.0</version>
+	<creationDate>2011-06-09</creationDate>
+	<author>HiopsNerevar</author>
+	<description>Russian language pack (site) for Phoca Gallery 3</description>
+	<files>
+		<filename>ru-RU.com_phocagallery.ini</filename>
+		<filename>ru-RU.com_phocagallery.sys.ini</filename>
+		<filename>index.html</filename>
+		<filename file="meta">install.xml</filename>
+	</files>
+</install>

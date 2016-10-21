@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site"
+	method="upgrade">
+	<name>МЛ Копирайт</name>
+	<author>Dmitriy K</author>
+	<creationDate>12.09.11</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmast.dk@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>2.0.0</version>
+	<description>Копирайты для разных страниц</description>
+	<files>
+		<filename module="mod_mlcopyring">mod_mlcopyring.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_mlcopyring.xml</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<config>
+	<fields name="params">
+	<fieldset name="basic">
+		<field name="moduleclass_sfx" type="text" label="Суфикс класса модуля" description="Суфикс класса модуля" default="fs" />
+		<field type="fheader" default="Копирайт для страниц по умолчанию" icon="/icons/icon-1.png" addfieldpath="/modules/mod_mlcopyring/models/fields" />		
+		<field name="default_text"  type="textarea" filter="safehtml" default="&lt;noindex&gt;&lt;a href=&quot;http://www.farba-studio.com&quot; rel=&quot;nofollow&quot;&gt;Создание сайта — &lt;/a&gt;&lt;/noindex&gt;" rows="4" cols="40" label="Текст" description="Текст который будет выводиться на всех страницах" />
+	</fieldset>
+	<fieldset name="advanced">
+		<field type="fheader" default="Копирайт для конкретного пункта меню" icon="/icons/icon-1.png" addfieldpath="/modules/mod_mlcopyring/models/fields" />
+		<field name="ID0" type="menuitem" default="" label="Пункт меню" description="Выберите пункт меню к которому будет привязан текст" />		
+		<field name="text0" type="textarea"  filter="safehtml" default="&lt;a href=&quot;http://www.farba-studio.com&quot; &gt;Создание сайта — &lt;/a&gt;" rows="4" cols="40" label="Текст" description="Текст который будет выводиться на странице с указанным ID пункта меню" />
+		<field type="fheader" default="Копирайт для конкретного пункта меню" icon="/icons/icon-1.png" addfieldpath="/modules/mod_mlcopyring/models/fields" />
+		<field name="ID1" type="menuitem" default="" label="Пункт меню" description="Выберите пункт меню к которому будет привязан текст" />		
+		<field name="text1" type="textarea"  filter="safehtml" default="" rows="4" cols="40" label="Текст" description="Текст который будет выводиться на странице с указанным ID пункта меню" />
+		<field type="fheader" default="Копирайт для конкретного пункта меню" icon="/icons/icon-1.png" addfieldpath="/modules/mod_mlcopyring/models/fields" />
+		<field name="ID2" type="menuitem" default="" label="Пункт меню" description="Выберите пункт меню к которому будет привязан текст" />		
+		<field name="text2" type="textarea"  filter="safehtml" default="" rows="4" cols="40" label="Текст" description="Текст который будет выводиться на странице с указанным ID пункта меню" />
+		<field type="fheader" default="Копирайт для конкретного пункта меню" icon="/icons/icon-1.png" addfieldpath="/modules/mod_mlcopyring/models/fields" />
+		<field name="ID3" type="menuitem" default="" label="Пункт меню" description="Выберите пункт меню к которому будет привязан текст" />		
+		<field name="text3" type="textarea"  filter="safehtml" default="" rows="4" cols="40" label="Текст" description="Текст который будет выводиться на странице с указанным ID пункта меню" />
+		<field type="fheader" default="Копирайт для конкретного пункта меню" icon="/icons/icon-1.png" addfieldpath="/modules/mod_mlcopyring/models/fields" />
+		<field name="ID4" type="menuitem" default="" label="Пункт меню" description="Выберите пункт меню к которому будет привязан текст" />		
+		<field name="text4" type="textarea"  filter="safehtml" default="" rows="4" cols="40" label="Текст" description="Текст который будет выводиться на странице с указанным ID пункта меню" />
+	</fieldset>
+	</fields>
+	</config>
+</extension>
